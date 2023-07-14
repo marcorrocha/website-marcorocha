@@ -1,0 +1,142 @@
+/*
+Colors used:
+Primary (White): #FDFDFD
+Primary (Black): #212121
+Secondary (Cream): #F1F1EC 
+Accent (Green): #A0EE20
+Accent (Orange): #FF4F04
+Accent (Grey): #737373
+*/
+
+img {
+    width: 100%;
+}
+
+body {background-color: #FDFDFD;
+    font-family: 'Space Grotesk', sans-serif;
+    font: size 16px;
+    font-weight:500;
+    color: #212121;
+}
+
+h1 { /* Page titles */
+    font-family: 'Space Grotesk';
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+
+h2 { /* Home intro text */
+    font-family: 'Space Grotesk';
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    line-height: 1.4;
+}
+
+h3 { /* Section titles (Work, Bio, Contacts) */
+    font-family: 'Space Grotesk';
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+h4 { /* Project titles */
+    font-family: 'Space Grotesk';
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+
+h5 { /* In container titles (Skills, Tools) */
+    font-family: 'Space Grotesk';
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+
+h6 { /* Project tags */
+    font-family: 'Space Grotesk';
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+p {
+    font-family: 'Space Grotesk';
+    font-size: 20px;
+    font-style: 400;
+    line-height: 1.6;
+}
+
+/*Hyperlinks*/
+
+a {
+    color: #3119e1;
+    text-decoration: none;
+}
+    a:visited {
+        color: #8560bf;
+        text-decoration: none;
+    }
+    a:hover {
+        color: #A0EE20;
+        text-decoration: none;
+    }
+    a:active {
+        color: #2c2c2c;
+    }
+    a:focus {
+        outline: 2px solid #212121;
+    }
+
+/*Buttons*/
+
+.primary-button {
+    display: inline-block;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #A0EE20;
+    color: #212121;
+}
+
+    .primary-button:hover {
+        background-color:#212121;
+        color: #A0EE20;
+    }
+
+/*.large-button {
+    display: inline-block;
+    border: none;
+    padding: 12px 32px;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #A0EE20;
+    color: #212121;
+    }*/
+
+.button.contact {
+    display: inline-block;
+    border: 2px solid #212121;
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    background-color: transparent;
+    color: #212121;
+    text-transform: uppercase;
+}
+
+    .button.contact:hover {
+        background-color: #212121;
+        color: #fdfdfd;
+        text-decoration: underline;
+    }

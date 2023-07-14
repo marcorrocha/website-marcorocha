@@ -3,16 +3,22 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio Marco Rocha</title>
     <link href="img/favicon.png" rel="shortcut icon">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body id="homepage">
 
     <header>
         <div> <img src="img/Logo.svg" alt="Marco Rocha">
             <nav>
-                <ul type="square">
+                <ul>
                     <li> <a href="index.html">Work</a> </li>
                     <li> <a href="about.html">About</a> </li>
                     <li> <a href="#contact">Contact</a> </li>
@@ -24,14 +30,17 @@
     <main>
         <div>
             <div>
-                <h1>Hi, I'm Marco.<span> I'm a UI Designer from Lisbon. </span></h1>
-                <p> A former digital strategist and copywriter, passionate about all kinds of visual interfaces. </p>
+                <h1 id="hero">Hi, I'm Marco. I'm a UI Designer from Lisbon.</h1>
+                <h2> A former digital strategist &amp copywriter with 10 years of EXP, enamored with visual interfaces. I&#39ve
+                    collaborated with cross-functional teams and corps on several industries to build digital solutions on the ad
+                    field. Now, my mission is to strive as a UI Designer, tapping into my visual and strategy prowess to create
+                    strong, solid experiences for users. </h2>
             </div>
         </div>
 <br>
         <div>
             <div>
-                <h2> Work </h2>
+                <h3 id="work"> Work </h3>
 
                 <!--First project-->
                 <div>
@@ -42,11 +51,12 @@
                         </picture>
                     </div>
                     <div>
-                        <h3> Rainy day </h3>
+                        <h4> Rainy day </h4>
                         <p> A money saving app helping users reach their goals via a vision board approach. </p>
-                        <p> UI/UX - Branding - Prototyping </p>
-                        <a href="rainyday.html"> Check out Rainy day </a>
+                        <h6> UI/UX - Branding - Prototyping </h6>
+                        <a href="rainyday.html" class="primary-button"> View project</a>
                     </div>
+                    <br>
                 </div>
                 <br>
                 <!--Second project-->
@@ -58,11 +68,12 @@
                         </picture>
                     </div>
                     <div>
-                        <h3> weee! </h3>
+                        <h4> weee! </h4>
                         <p> A responsive playground locator web app based on user research and usability testing. </p>
-                        <p> UI/UX - Responsive design - Usability Testing </p>
-                        <a href="#"> Check out weee! </a>
+                        <h6> UI/UX - Responsive design - Usability Testing </h6>
+                        <a href="#" class="primary-button"> View project </a>
                     </div>
+                    <br>
                 </div>
                 <br>
                 <!--Third project-->
@@ -74,11 +85,12 @@
                         </picture>
                     </div>
                     <div>
-                        <h3> Novel </h3>
+                        <h4> Novel </h4>
                         <p> A curated e-bookstore for iOS and Android to captivate light users' reading interest. </p>
-                        <p> UI/UX - Material Design Guidelines - HIG Design Guidelines </p>
-                        <a href="#"> Check out Novel </a>
+                        <h6> UI/UX - Material Design Guidelines - HIG Design Guidelines </h6>
+                        <a href="#" class="primary-button"> View project </a>
                     </div>
+                    <br>
                 </div>
 
             </div>
@@ -88,11 +100,11 @@
 
     <footer id="contact">
         <div>
-            <h2> Want to work together? </h2>
+            <h3> Want to work together? </h3>
             <p> Drop a line if you want to discuss opportunities. Call: <a href="tel:+351915515040"> +351 915515040 </a>
                 or just send an email.</p>
             <div>
-                <a href="mailto:marcorobertorocha@gmail.com"> Email me </a>
+                <a href="mailto:marcorobertorocha@gmail.com" class="button contact"> Email me </a>
             </div>
 
             <!--Social Links-->
