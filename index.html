@@ -16,9 +16,10 @@
 <body id="homepage">
 
     <header>
-        <div> <img src="img/Logo.svg" alt="Marco Rocha">
+        <div id="header" class="container"> 
+            <img class="logo" src="img/Logo.svg" alt="Marco Rocha">
             <nav>
-                <ul>
+                <ul class="navigation">
                     <li> <a href="index.html">Work</a> </li>
                     <li> <a href="about.html">About</a> </li>
                     <li> <a href="#contact">Contact</a> </li>
@@ -28,93 +29,92 @@
     </header>
 
     <main>
-        <div>
-            <div>
-                <h1 id="hero">Hi, I'm Marco. I'm a UI Designer from Lisbon.</h1>
+        <div id="hero">
+            <div class="container">
+                <h1>Hi, I'm Marco. I'm a UI Designer from Lisbon.</h1>
                 <h2> A former digital strategist &amp copywriter with 10 years of EXP, enamored with visual interfaces. I&#39ve
-                    collaborated with cross-functional teams and corps on several industries to build digital solutions on the ad
+                    collaborated with cross-functional teams on several industries to build digital solutions on the ad
                     field. Now, my mission is to strive as a UI Designer, tapping into my visual and strategy prowess to create
                     strong, solid experiences for users. </h2>
             </div>
         </div>
 <br>
-        <div>
-            <div>
-                <h3 id="work"> Work </h3>
+        <div id="work">
+            <div class="container">
+                <h3> Work </h3>
 
                 <!--First project-->
-                <div>
-                    <div>
+                <div class="row">
+                    <div class="column">
                         <picture>
                             <source srcset="img/cover-images/project_rainyday_cover_1x.jpg" media="(max-width:767px)">
                             <img src="img/cover-images/project_rainyday_cover_2x.jpg" alt="rainy day">
                         </picture>
                     </div>
-                    <div>
+                    <div class="column">
                         <h4> Rainy day </h4>
                         <p> A money saving app helping users reach their goals via a vision board approach. </p>
                         <h6> UI/UX - Branding - Prototyping </h6>
                         <a href="rainyday.html" class="primary-button"> View project</a>
                     </div>
-                    <br>
                 </div>
-                <br>
+
                 <!--Second project-->
-                <div>
-                    <div>
+                <div class="row">
+                    <div class="column">
                         <picture>
                             <source srcset="img/cover-images/project_weee!_cover_1x.jpg" media="(max-width:767px)">
                             <img src="img/cover-images/project_weee!_cover_2x.jpg" alt="weee!">
                         </picture>
                     </div>
-                    <div>
+                    <div class="column">
                         <h4> weee! </h4>
                         <p> A responsive playground locator web app based on user research and usability testing. </p>
                         <h6> UI/UX - Responsive design - Usability Testing </h6>
                         <a href="#" class="primary-button"> View project </a>
                     </div>
-                    <br>
                 </div>
-                <br>
+
                 <!--Third project-->
-                <div>
-                    <div>
+                <div class="row">
+                    <div class="column">
                         <picture>
                             <source srcset="img/cover-images/project_novel_cover_1x.jpg" media="(max-width:767px)">
                             <img src="img/cover-images/project_novel_cover_2x.jpg" alt="novel">
                         </picture>
                     </div>
-                    <div>
+                    <div class="column">
                         <h4> Novel </h4>
                         <p> A curated e-bookstore for iOS and Android to captivate light users' reading interest. </p>
                         <h6> UI/UX - Material Design Guidelines - HIG Design Guidelines </h6>
                         <a href="#" class="primary-button"> View project </a>
                     </div>
-                    <br>
                 </div>
 
             </div>
         </div>
     </main>
-    <br>
 
     <footer id="contact">
-        <div>
+        <div class="container">
+            <div>
             <h3> Want to work together? </h3>
             <p> Drop a line if you want to discuss opportunities. Call: <a href="tel:+351915515040"> +351 915515040 </a>
                 or just send an email.</p>
+            </div>
+            <br>
             <div>
                 <a href="mailto:marcorobertorocha@gmail.com" class="button contact"> Email me </a>
             </div>
 
             <!--Social Links-->
-            <div>
+            <div id="icons">
                 <nav>
                     <ul>
                         <li> <a href="https://www.linkedin.com/in/marcorobrocha/" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="50px"
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="40px"
                                     id="Livello_1" style="enable-background:new 0 0 50 50;" version="1.1" viewBox="0 0 50 50"
-                                    width="50px" xml:space="preserve">
+                                    width="40px" xml:space="preserve">
                                     <g>
                                         <path
                                             d="M24.969,46.433c-5.914,0-11.28-2.378-15.121-6.28c-3.902-3.902-6.28-9.269-6.28-15.183s2.378-11.28,6.28-15.183   c3.841-3.842,9.207-6.22,15.121-6.22c5.916,0,11.281,2.378,15.183,6.22c3.902,3.902,6.279,9.269,6.279,15.183   s-2.377,11.28-6.279,15.183S30.885,46.433,24.969,46.433z M18.933,12.836c-1.28,0-2.317,1.098-2.317,2.378s1.037,2.317,2.317,2.317   s2.316-1.037,2.316-2.317S20.213,12.836,18.933,12.836z M20.823,18.934h-3.78v13.109h3.78V18.934z M26.434,18.934h-3.782v13.109   h3.782v-8.415c0.549-0.549,1.219-0.854,1.951-0.914c0.365-0.062,0.73,0.061,1.098,0.244c0.305,0.183,0.67,0.67,0.67,1.097v7.988   h3.719v-7.988c0-1.707-1.035-3.475-2.561-4.39c-1.402-0.731-3.414-0.854-4.877-0.122V18.934z" />
@@ -123,8 +123,8 @@
                             </a> </li>
                         <li> <a href="https://www.behance.net/marcorrocha" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    enable-background="new 0 0 56.693 56.693" height="56.693px" id="Layer_1" version="1.1"
-                                    viewBox="0 0 56.693 56.693" width="56.693px" xml:space="preserve">
+                                    enable-background="new 0 0 56.693 56.693" height="40x" id="Layer_1" version="1.1"
+                                    viewBox="0 0 56.693 56.693" width="40px" xml:space="preserve">
                                     <g>
                                         <path
                                             d="M38.031,27.257c-3.174,0-3.615,3.168-3.615,3.168h6.748C41.164,30.425,41.207,27.257,38.031,27.257z" />
@@ -141,7 +141,7 @@
                 </nav>
             </div>
 
-            <p> Copyright MARCO ROCHA 2023 </p>
+            <p id="copyright"> Copyright - Marco Rocha 2023 </p>
 
         </div>
     </footer>
