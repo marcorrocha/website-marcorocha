@@ -48,12 +48,22 @@ body {
         font-size: 36px;
         font-weight: 700;
         letter-spacing: -2px;
+        margin: 10px 0 0 0;
     }
 
     h5 { /* In container titles (Skills, Tools) */
         font-size: 28px;
         font-weight: 700;
         letter-spacing: -1px;
+        margin: 0;
+    }
+
+    h5 {
+        display: block;
+        margin-block-start: 1.67em;
+        margin-block-end: 1.67em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
     }
 
     h6 { /* Project tags */
@@ -65,7 +75,7 @@ body {
 
     p {
         font-size: 20px;
-        font-style: 400;
+        font-weight: 400;
         line-height: 1.6;
     }
 
@@ -102,16 +112,18 @@ body {
         padding: 8px 12px;
         border-radius: 4px;
         font-size: 16px;
-        font-weight: bold;
+        font-weight: 700;
         cursor: pointer;
         text-decoration: none;
         background-color: #A0EE20;
         color: #212121;
+        transition: 0.2s opacity;
     }
 
         .primary-button:hover {
-            background-color:#212121;
-            color: #A0EE20;
+        background-color:  #212121;
+        color: #A0EE20;
+        opacity: 0.8;
         }
 
     .button.contact {
@@ -152,6 +164,12 @@ body {
     margin: 0px 0px 24px 0;
     text-align: left;
     display: block;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 .column {
@@ -197,13 +215,14 @@ main {
 .aboutimage{
     width: 100%;
     float: inline-end;
+    margin: 16px;
 }
 
 .logo {max-width: 140px; padding: 16px 0 0 32px; float: left;}
 
 nav {
-    display: inline-block; 
     width: 100%;
+    display: inline-block; 
     padding-top: 24px; padding-bottom: 8px;
 }
 
@@ -256,3 +275,99 @@ nav > ul > li > a:focus {
     font-size: 16px;
     padding-bottom: 16px;
 }
+
+/*Animations*/
+
+.berlin {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+@keyframes color-change {
+    0% {fill: #edc655;}
+    50% {fill: #fcffad;}
+    100% {fill: #f76414;}
+}
+
+@keyframes cloud-move {
+    from {transform: translate(0,50px);}
+    to {transform: translate(200px,50px);} 
+}
+
+.cloud-front {
+    animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+    from {transform: translate(446px,48px);}
+    to {transform: translate(100px, 48px);}
+  }
+
+.cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+.sun {
+    animation: 4s color-change infinite alternate linear;
+}
+
+/*Media Queries*/
+
+    /*====Medium====*/
+    @media only screen and (min-width: 640px) {
+        header {
+            text-align: unset;
+            padding: 0px 0px 13px;
+            font-size: 18px;
+        }
+
+        nav {
+            width: auto;
+            float: right;
+            margin-right: 14px;
+            margin-bottom: 32px;
+        }
+
+        .col-md-6 {
+            width: 50%;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 10px;
+        }
+
+    }
+
+    /*====Large====*/
+    @media only screen and (min-width: 1024px) {
+        header {
+            text-align: unset;
+            padding: 0 0 13px;
+            font-size: 20px;
+        }
+
+        nav {
+            width: auto;
+            float: right;
+            margin-right: 14px;
+            margin-bottom: 32px;
+        }
+
+        .col-lg-7{
+            width: 60%;
+        }
+
+        .col-lg-5{
+            width: 40%;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+       
