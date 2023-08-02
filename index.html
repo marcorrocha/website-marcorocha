@@ -11,20 +11,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
 <body id="homepage">
 
     <header>
         <div id="header" class="container"> 
-            <img class="logo" src="img/Logo.svg" alt="Marco Rocha">
-            <nav>
-                <ul class="navigation">
-                    <li> <a href="index.html">Work</a> </li>
-                    <li> <a href="about.html">About</a> </li>
-                    <li> <a href="#contact">Contact</a> </li>
-                </ul>
-            </nav>
+            <div class="logo-container"> 
+                <img class="logo" src="img/Logo.svg" alt="Marco Rocha"> 
+            </div>
+            <div>
+                <nav class="navtoggle" id="navtoggle">
+                    <ul class="navigation">
+                        <li> <a href="index.html">Work</a> </li>
+                        <li> <a href="about.html">About</a> </li>
+                        <li> <a href="#contact" onclick="menuToggle()">Contact </a> </li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
@@ -38,7 +44,7 @@
                     strong, solid experiences for users. </h2>
             </div>
         </div>
-<br>
+
         <div id="work">
             <div class="container">
                 <h3> Work </h3>
@@ -757,6 +763,7 @@
         </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
 
 </body>
